@@ -1,0 +1,59 @@
+.textlabel{
+    font-family: Arial, sans-serif;
+    font-size:18px;
+    font-weight: semi-bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: #003594;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campotexto {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}   
+
+.selectlabel {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+#enviar {
+    background-color: #003594;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}   
+
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 200px;
+    max-height: 150px;
+}

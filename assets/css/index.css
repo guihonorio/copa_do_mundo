@@ -1,0 +1,12 @@
+.title {
+    color: #003594;
+    font-size: 2em;
+    text-align: center;
+}  
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
