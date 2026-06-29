@@ -1,3 +1,35 @@
+/* Home Page */
+
+.title {
+    color: #003594;
+    font-size: 2em;
+    text-align: center;
+}  
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+
+#foto-oficial {
+    display: block;
+    margin: 20px auto;
+    width: auto;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.motivacional {
+    text-align: center;
+    font-size: 1.5em;
+    color:  #a08804;
+}
+
+
+/* Cadastro */
+
 .textlabel{
     font-family: Arial, sans-serif;
     font-size:18px;
@@ -56,4 +88,26 @@ h1 {
     margin: 0 auto 20px auto;
     max-width: 200px;
     max-height: 150px;
+}
+
+/* Tabela */
+#brasil {
+    color: #dada1c;
+   
+}
+caption {
+   color: #000000;
+}
+
+#escocia {
+    color: #4197dd;
+    
+}
+
+#marrocos {
+    color: rgb(214, 12, 12)
+}
+
+#haiti {
+    color: blue
 }
