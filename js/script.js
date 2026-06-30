@@ -34,3 +34,5 @@ function aumentar_imagem() {
 function diminuir_imagem() {
     document.getElementById("foto-oficial").style.transform = "scale(1)";
 }
+
+

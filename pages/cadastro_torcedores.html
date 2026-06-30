@@ -9,19 +9,19 @@
 <body>
     <form action="./resultado.html">
         <h1>Cadastro de Torcedores</h1>
-        <img class="logo" src="../assets/imagens/Federação_Cabo-Verdiana_de_Futebol.png" alt="Logo do time">
+        <img class="logo" src="../assets/imagens/federacao-cabo-verdiana-de-futebol.png" alt="Logo do time">
 
         <label class="textlabel">Nome:</label>
-        <input class="campotexto" type="text" name="nome" placeholder="Nome Completo" required>
+        <input id="nome" class="campotexto" type="text" name="nome" placeholder="Nome Completo" required>
 
         <label class="textlabel">Data de Nascimento:</label> 
-        <input class="campotexto" type="date" name="data_nascimento" required>
+        <input id="data_nascimento" class="campotexto" type="date" name="data_nascimento" required>
 
         <label class="textlabel">Email:</label>
-        <input class="campotexto" type="email" name="email" placeholder="Insira seu email" required>
+        <input id="email" class="campotexto" type="email" name="email" placeholder="Insira seu email" required>
 
         <label class="selectlabel">País:</label>
-        <select class="select">
+        <select id="select_pais" class="select">
             <option value="brasil">Brasil</option>
             <option value="cabo_verde" selected>Cabo Verde</option>
             <option value="espanha">Espanha</option>
@@ -37,7 +37,7 @@
         </select>
 
         <label class="selectlabel">Jogador Favorito:</label>
-        <select class="select">
+        <select id="select_jogador" class="select">
             <option value="vozinha">Vozinha</option>
             <option value="logan_costa">Logan Costa</option>
             <option value="mario_rosa">Mário Rosa</option>
