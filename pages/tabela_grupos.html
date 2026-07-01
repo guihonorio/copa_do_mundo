@@ -1,47 +1,72 @@
 <!DOCTYPE html> 
 <html lang="pt-BR">    
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Resultado das Eliminatórias</title>
 </head>
-<body>
-    <table border="1">
-        <caption>Resultados das Eliminatórias - Grupo C</caption>
-        <thead>
-            <tr>
-                <th>Seleção</th>
-                <th>Pontos</th>
-                <th>Vitórias</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td id="brasil">Brasil</td>
-                <td>7</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td id="escocia">Escócia</td>
-                <td>4</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td id="marrocos">Marrocos</td>
-                <td>3</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td id="haiti">Haiti</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-        </tbody>
+<body onload="carregarTema()">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home Page</a></li>
+            <li><a href="../pages/cadastro_torcedores.html">Cadastro</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <table>
+            <caption>Resultados das Eliminatórias - Grupo C</caption>
+            <thead>
+                <tr>
+                    <th>Seleção</th>
+                    <th>Pontos</th>
+                    <th>Vitórias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="brasil" onmousemove="mudar_cor1()" onmouseout="retornar_cor1()">
+                        <img src="../assets/imagens/bandeiras/brasil.png" alt="Brasil" class="bandeira">
+                        Brasil
+                    </td>
+                    <td>7</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td id="escocia" onmousemove="mudar_cor2()" onmouseout="retornar_cor2()">
+                        <img src="../assets/imagens/bandeiras/escocia.png" alt="Escócia" class="bandeira">
+                        Escócia
+                    </td>
+                    <td>4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td id="marrocos" onmousemove="mudar_cor3()" onmouseout="retornar_cor3()">
+                        <img src="../assets/imagens/bandeiras/marrocos.svg" alt="Marrocos" class="bandeira">
+                        Marrocos
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td id="haiti" onmousemove="mudar_cor4()" onmouseout="retornar_cor4()">
+                        <img src="../assets/imagens/bandeiras/haiti.png" alt="Haiti" class="bandeira">
+                        Haiti
+                    </td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <tfoot>
-        </tfoot>
-    </table>
+    <footer>
+        <div class="sub-footer">
+            <p>Copyright © 2026 Todos os direitos reservados Federação Cabo-verdiana de Futebol.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

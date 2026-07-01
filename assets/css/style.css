@@ -1,113 +1,420 @@
-/* Home Page */
+/* ===========================
+   CONFIGURAÇÕES GERAIS
+=========================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f8fc;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    transition: background .3s, color .3s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: #003594;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.posicao {
+    color: #c8102e !important;
+}
 
 .title {
-    color: #003594;
-    font-size: 2em;
+    font-size: 48px;
+    font-weight: 800;
     text-align: center;
-}  
+    color: #003594;
+    margin: 10px 0 15px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* ===========================
+   HEADER OFICIAL FCF
+=========================== */
+
+nav {
+    background-color: #001f3f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: transparent;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-left: 4px solid transparent;
+    transition: .3s;
+}
+
+nav a:hover {
+    border-left: 4px solid #c8102e;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ===========================
+   BOTÃO TEMA (HEADER)
+=========================== */
+
+#tema {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 20px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+    transition: .3s;
+}
+
+#tema:hover {
+    border-left: 4px solid #c8102e;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ===========================
+   HOME
+=========================== */
 
 #logo {
     display: block;
-    margin: 0 auto;
-    width: 150px;
+    margin: 20px auto;
+    width: 170px;
     height: auto;
+    filter: drop-shadow(0 8px 18px rgba(0,0,0,.20));
 }
 
 #foto-oficial {
     display: block;
-    margin: 20px auto;
-    width: auto;
-    height: auto;
-    transition: transform 0.3s;
+    width: 100%;
+    max-width: 780px;
+    margin: 35px auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0,0,0,.20);
+    transition: transform .3s;
 }
 
 .motivacional {
     text-align: center;
-    font-size: 1.5em;
-    color:  #a08804;
+    font-size: 24px;
+    font-weight: bold;
+    color: #a08804;
+    margin-bottom: 30px;
 }
 
-
-/* Cadastro */
-
-.textlabel{
-    font-family: Arial, sans-serif;
-    font-size:18px;
-    font-weight: semi-bold;
-    color: #000000;
-    margin-bottom: 5px;
+#curiosidade {
+    max-width: 900px;
+    margin: 35px auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-left: 8px solid #003594;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    line-height: 1.8;
+    font-size: 17px;
 }
 
-h1 {
-    font-family: Arial, sans-serif;
-    font-size: 2em;
+ul {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 17px;
+    transition: .2s;
+}
+
+ul li:hover {
     color: #003594;
-    text-align: center;
-    margin-bottom: 20px;
+    transform: translateX(5px);
 }
 
-.campotexto {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
+/* ===========================
+   FORMULÁRIO
+=========================== */
+
+form {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
 }
-
-.select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-}   
-
-.selectlabel {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #000000;
-    margin-bottom: 5px;
-}
-
-#enviar {
-    background-color: #003594;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}   
 
 .logo {
     display: block;
-    margin: 0 auto 20px auto;
-    max-width: 200px;
-    max-height: 150px;
+    margin: 0 auto 20px;
+    max-width: 180px;
 }
 
-/* Tabela */
-#brasil {
-    color: #dada1c;
-   
+.textlabel, .selectlabel {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 6px;
 }
+
+.campotexto, .select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.campotexto:focus, .select:focus {
+    border: 2px solid #003594;
+    outline: none;
+}
+
+#enviar {
+    width: 100%;
+    padding: 15px;
+    background: #003594;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#enviar:hover {
+    background: #a08804;
+}
+
+/* ===========================
+   RESULTADO
+=========================== */
+
+#exibir_resultado {
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+    line-height: 2;
+    font-size: 18px;
+}
+
+#sucesso_cadastro {
+    display: block;
+    margin: 30px auto;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+/* ===========================
+   TABELA
+=========================== */
+
+.bandeira {
+    width: 22px;
+    height: 16px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+    border: 1px solid #888;
+}
+
+thead th:first-child {
+    border-top-left-radius: 12px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 12px;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
 caption {
-   color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    color: #003594;
+    margin-bottom: 15px;
 }
 
-#escocia {
-    color: #4197dd;
-    
+th {
+    background: #003594;
+    color: white;
 }
 
-#marrocos {
-    color: rgb(214, 12, 12)
+th, td {
+    padding: 15px;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
 }
 
-#haiti {
-    color: blue
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:first-child {
+    text-align: left;
+    padding-left: 40px;
+}
+
+tr:nth-child(even) {
+    background: #e6ebf1;
+}
+
+tr:hover {
+    background: #dfefff;
+}
+
+/* ===========================
+   FOOTER OFICIAL FCF
+=========================== */
+
+footer {
+    background-color: #001f3f;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.sub-footer {
+    background-color: #001f3f;
+    text-align: center;
+    padding: 20px 25px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.sub-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ===========================
+   TEMA ESCURO
+=========================== */
+
+.dark-mode {
+    background: #1c1c1c;
+    color: white;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode p, .dark-mode li, .dark-mode label, .dark-mode caption, .dark-mode th, .dark-mode td {
+    color: white;
+}
+
+.dark-mode form, .dark-mode #curiosidade, .dark-mode #exibir_resultado, .dark-mode table {
+    background: #2c2c2c;
+}
+
+.dark-mode input, .dark-mode select {
+    background: #3a3a3a;
+    color: white;
+    border: 1px solid #888;
+}
+
+.dark-mode tr:nth-child(even) {
+    background: #383838;
+}
+
+.dark-mode tr:hover {
+    background: #444;
+}
+
+.dark-mode table, .dark-mode th, .dark-mode td {
+    border-color: #777;
+}
+
+.dark-mode nav, .dark-mode footer {
+    background-color: #001f3f;
+}
+
+.dark-mode nav a, .dark-mode #tema {
+    background: transparent;
+}
+
+.dark-mode nav a:hover, .dark-mode #tema:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .title, .dark-mode form h1, .dark-mode caption, .dark-mode h1, .dark-mode h3:not(.posicao) {
+    color: #66b2ff !important; 
+}
+
+.dark-mode .motivacional {
+  color: #e6c200 !important;
 }
