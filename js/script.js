@@ -180,13 +180,13 @@ function mostrarResultado() {
 //Cadastro
 function campoSelecionado() {
     document.getElementById("nome").style.backgroundColor = "#fff9c4";
-    document.getElementById("nome").style.color = "#222"; // Força a letra escura no fundo amarelo
+    document.getElementById("nome").style.color = "#222";
 }
 
 function campoNormal() {
     document.getElementById("nome").style.backgroundColor = "";
     document.getElementById("nome").style.fontWeight = "";
-    document.getElementById("nome").style.color = ""; // Devolve a cor original (branca no escuro)
+    document.getElementById("nome").style.color = "";
 }
 
 function digitandoNome() {
@@ -195,7 +195,7 @@ function digitandoNome() {
 
 function paisAlterado() {
     document.getElementById("select_pais").style.backgroundColor = "#d4edda";
-    document.getElementById("select_pais").style.color = "#222"; // Força a letra escura no fundo verde
+    document.getElementById("select_pais").style.color = "#222";
 }
 
 //Tema escuro
@@ -232,3 +232,4 @@ function carregarTema() {
         }
     }
 }
+
